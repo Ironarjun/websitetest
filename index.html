@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,28 +6,31 @@
   <title>AES UF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- GOOGLE FONT (optional but recommended) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
-    /* HEADER */
+    /* ================= HEADER ================= */
     .header {
       background: black;
-      color: white;
       padding: 15px 30px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      position: sticky; /* makes it stay on scroll */
+      top: 0;
+      z-index: 1000;
     }
 
     .logo {
-      font-weight: bold;
-      font-size: 20px;
+      height: 50px; /* CHANGE size if needed */
     }
 
-    /* NAVBAR */
+    /* ================= NAV ================= */
     .nav {
       background: #eee;
       padding: 10px 30px;
@@ -36,22 +40,27 @@
       margin-right: 20px;
       text-decoration: none;
       color: black;
+      font-size: 14px;
     }
 
-    /* HERO SECTION */
+    /* ================= HERO ================= */
     .hero {
       display: flex;
-      height: 80vh;
+      height: 85vh;
     }
 
-.left {
-  width: 50%;
-  background-image: url("images/aeshome.png");
-  background-size: cover;     /* fills area */
-  background-position: center; /* centers image */
-  background-repeat: no-repeat;
-}
+    /* LEFT SIDE IMAGE */
+    .left {
+      width: 50%;
+      background-image: url("images/aeshome.png"); 
+      /* 🔥 CHANGE THIS to your image file name */
 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* RIGHT SIDE CONTENT */
     .right {
       width: 50%;
       background: #0b0b2d;
@@ -62,9 +71,29 @@
       justify-content: center;
     }
 
-    .right h1 {
-      font-size: 40px;
+    /* BIG AES LOGO */
+    .aes-logo {
+      width: 160px; 
+      /* 🔥 CHANGE size if needed */
+
       margin-bottom: 20px;
+    }
+
+    .right h1 {
+      font-size: 42px;
+      margin: 10px 0;
+    }
+
+    .right p {
+      opacity: 0.8;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
     }
 
     .btn {
@@ -75,6 +104,19 @@
       border-radius: 25px;
       width: fit-content;
       text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        width: 100%;
+        height: 50vh;
+      }
     }
 
   </style>
@@ -82,15 +124,15 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- ================= HEADER ================= -->
   <div class="header">
-    <div class="logo">AES UF</div>
-    <div>🔔 ⚙️</div>
+    <img src="images/logo.png" class="logo">
+    <!-- 🔥 CHANGE this to your top-left logo file -->
   </div>
 
-  <!-- NAV -->
+  <!-- ================= NAV ================= -->
   <div class="nav">
-    <a href="#">Home</a>
+    <a href="index.html">Home</a>
     <a href="#">Information</a>
     <a href="#">Contact</a>
     <a href="#">Project posts</a>
@@ -98,29 +140,38 @@
     <a href="#">Partnerships</a>
   </div>
 
-  <!-- HERO -->
+  <!-- ================= HERO ================= -->
   <div class="hero">
 
-    <!-- LEFT IMAGE -->
+    <!-- LEFT BIG IMAGE -->
     <div class="left"></div>
 
-    <!-- RIGHT CONTENT -->
+    <!-- RIGHT PANEL -->
     <div class="right">
+
+      <!-- BIG AES SHIELD -->
+      <img src="images/aes-logo.png" class="aes-logo">
+      <!-- 🔥 CHANGE to your AES shield PNG -->
+
       <p>Welcome to the</p>
+
       <h1>Audio Engineering Society</h1>
+
       <p>at the University of Florida</p>
 
       <ul>
         <li>🎸 Workshops</li>
         <li>🎸 Tech talks</li>
         <li>🎸 Socials</li>
-        <li>🎸 Open to all majors</li>
+        <li>🎸 Open to all majors and experience</li>
       </ul>
 
       <a href="#" class="btn">Let's Chat!</a>
+
     </div>
 
   </div>
 
 </body>
 </html>
+```
