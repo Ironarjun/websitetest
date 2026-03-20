@@ -1,0 +1,200 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Information - AES UF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: black;
+      color: white;
+    }
+
+    /* ================= HEADER ================= */
+    .header {
+      background: black;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    /* ================= NAV ================= */
+    .nav {
+      background: #eee;
+      padding: 10px 30px;
+    }
+
+    .nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+    }
+
+    /* ================= BUTTONS ================= */
+    .button-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px 20px;
+    }
+
+    .info-btn {
+      background: #ccc;
+      color: black;
+      padding: 20px 40px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .info-btn:hover {
+      background: #aaa;
+    }
+
+    /* ================= WHO SECTION ================= */
+    .who {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .who h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .who ul {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    /* ================= CARDS ================= */
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .card {
+      width: 300px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+    }
+
+    .card p {
+      opacity: 0.8;
+    }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .button-section {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <img src="images/aes_shield.png" class="logo">
+  </div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="information.html">Information</a>
+    <a href="#">Contact</a>
+    <a href="#">Project posts</a>
+    <a href="#">Donations</a>
+    <a href="#">Partnerships</a>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="button-section">
+    <!-- 🔥 LINKS TO HIDDEN PAGES -->
+    <a href="AesHardwareInfo.html" class="info-btn">Hardware Team</a>
+    <a href="AesMusicProdInfo.html" class="info-btn">Music Prod Team</a>
+  </div>
+
+  <!-- WHO ARE WE -->
+  <div class="who">
+    <h1>Who are we?</h1>
+
+    <ul>
+      <li>“The only professional society devoted exclusively to audio technology”</li>
+      <li>Founded in the US in 1948</li>
+      <li>A network of 12,000+ members</li>
+      <li>We are one 120+ AES student sections</li>
+      <li>Hosts a prestigious research journal</li>
+      <li>Competitions and conventions</li>
+      <li>But what does UF AES do? → Click on one of the buttons above to find out!</li>
+    </ul>
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards">
+
+    <div class="card">
+      <img src="images/jam.jpg"> <!-- 🔥 CHANGE -->
+      <h3>Jam Sesh</h3>
+      <p>Details coming soon...</p>
+      <p>One of the <b>LOUDEST</b> socials that AES has!</p>
+    </div>
+
+    <div class="card">
+      <img src="images/concert.jpg"> <!-- 🔥 CHANGE -->
+      <h3>AES Concert!!!</h3>
+      <p>March 28th @ The Ox!</p>
+      <p>Full line-up coming soon!</p>
+    </div>
+
+    <div class="card">
+      <img src="images/meeting.jpg"> <!-- 🔥 CHANGE -->
+      <h3>More Events</h3>
+      <p><b>COMING SOOOON!</b></p>
+      <p>Stay tuned for more activities</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
+```
+
