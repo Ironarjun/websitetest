@@ -6,7 +6,7 @@
   <title>AES UF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- GOOGLE FONT (optional but recommended) -->
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
   <style>
@@ -18,16 +18,16 @@
     /* ================= HEADER ================= */
     .header {
       background: black;
-      padding: 15px 30px;
+      padding: 10px 30px;
       display: flex;
       align-items: center;
-      position: sticky; /* makes it stay on scroll */
+      position: sticky;
       top: 0;
       z-index: 1000;
     }
 
     .logo {
-      height: 50px; /* CHANGE size if needed */
+      height: 50px;
     }
 
     /* ================= NAV ================= */
@@ -49,43 +49,37 @@
       height: 85vh;
     }
 
-    /* LEFT SIDE IMAGE */
     .left {
       width: 50%;
-      background-image: url("images/aeshome.png"); 
-      /* 🔥 CHANGE THIS to your image file name */
-
+      background-image: url("images/aeshome.png"); /* 🔥 CHANGE if needed */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
 
-    /* RIGHT SIDE CONTENT */
     .right {
       width: 50%;
       background: #0b0b2d;
       color: white;
-      padding: 60px;
+      padding: 80px 60px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    /* BIG AES LOGO */
     .aes-logo {
-      width: 160px; 
-      /* 🔥 CHANGE size if needed */
-
-      margin-bottom: 20px;
+      width: 180px;
+      margin-bottom: 30px;
     }
 
     .right h1 {
-      font-size: 42px;
+      font-size: 48px;
       margin: 10px 0;
+      line-height: 1.2;
     }
 
     .right p {
-      opacity: 0.8;
+      opacity: 0.85;
     }
 
     ul {
@@ -107,6 +101,40 @@
       font-weight: 600;
     }
 
+    /* ================= ABOUT ================= */
+    .about {
+      background: black;
+      color: white;
+      padding: 30px 40px; /* minimal black space */
+      text-align: center;
+    }
+
+    .about h2 {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.85;
+      line-height: 1.6;
+    }
+
+    /* ================= FOOTER ================= */
+    .footer {
+      background: #0b0b2d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
     /* ================= MOBILE ================= */
     @media (max-width: 768px) {
       .hero {
@@ -124,13 +152,13 @@
 
 <body>
 
-  <!-- ================= HEADER ================= -->
+  <!-- HEADER -->
   <div class="header">
-    <img src="images/aes_shield.png" class="logo">
-    <!-- 🔥 CHANGE this to your top-left logo file -->
+    <img src="images/aes_shield.png" class="logo"> 
+    <!-- 🔥 make sure this file exists -->
   </div>
 
-  <!-- ================= NAV ================= -->
+  <!-- NAV -->
   <div class="nav">
     <a href="index.html">Home</a>
     <a href="#">Information</a>
@@ -140,18 +168,15 @@
     <a href="#">Partnerships</a>
   </div>
 
-  <!-- ================= HERO ================= -->
+  <!-- HERO -->
   <div class="hero">
 
-    <!-- LEFT BIG IMAGE -->
     <div class="left"></div>
 
-    <!-- RIGHT PANEL -->
     <div class="right">
 
-      <!-- BIG AES SHIELD -->
-      <img src="images/aes_logo.png" class="aes-logo">
-      <!-- 🔥 CHANGE to your AES shield PNG -->
+      <img src="images/aes_shield.png" class="aes-logo">
+      <!-- 🔥 same or different logo file -->
 
       <p>Welcome to the</p>
 
@@ -170,6 +195,22 @@
 
     </div>
 
+  </div>
+
+  <!-- ABOUT -->
+  <div class="about">
+    <h2>About UF AES</h2>
+    <p>
+      The Audio Engineering Society is a national organization devoted to the advancement and understanding of audio technology. 
+      Our chapter of AES at the University of Florida prides itself on its contributions to the audio field and seeks to expand 
+      the presence of audio technology in the Electrical and Computer Engineering Department as well as the entire campus.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <img src="images/aes_shield.png" class="footer-logo">
+    <p>© 2026 Audio Engineering Society - University of Florida</p>
   </div>
 
 </body>
