@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AES UF</title>
+  <title>AES UF TEST</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- FONT -->
@@ -24,6 +24,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      border: 2px solid red; /* DEBUG */
     }
 
     .logo {
@@ -34,6 +35,7 @@
     .nav {
       background: #eee;
       padding: 10px 30px;
+      border: 2px solid blue; /* DEBUG */
     }
 
     .nav a {
@@ -47,14 +49,17 @@
     .hero {
       display: flex;
       height: 85vh;
+      border: 2px solid green; /* DEBUG */
     }
 
     .left {
       width: 50%;
-      background-image: url("images/aeshome.png"); /* 🔥 CHANGE if needed */
+      background: purple; /* fallback color */
+      background-image: url("images/aeshome.png"); 
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      border: 2px solid yellow; /* DEBUG */
     }
 
     .right {
@@ -65,29 +70,18 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      border: 2px solid orange; /* DEBUG */
     }
 
     .aes-logo {
       width: 180px;
       margin-bottom: 30px;
+      background: gray; /* shows if image fails */
     }
 
     .right h1 {
       font-size: 48px;
       margin: 10px 0;
-      line-height: 1.2;
-    }
-
-    .right p {
-      opacity: 0.85;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
     }
 
     .btn {
@@ -105,20 +99,9 @@
     .about {
       background: black;
       color: white;
-      padding: 30px 40px; /* minimal black space */
+      padding: 30px 40px;
       text-align: center;
-    }
-
-    .about h2 {
-      margin-bottom: 15px;
-      font-size: 28px;
-    }
-
-    .about p {
-      max-width: 800px;
-      margin: 0 auto;
-      opacity: 0.85;
-      line-height: 1.6;
+      border: 2px solid pink; /* DEBUG */
     }
 
     /* ================= FOOTER ================= */
@@ -127,12 +110,12 @@
       color: white;
       text-align: center;
       padding: 20px;
-      border-top: 1px solid rgba(255,255,255,0.1);
+      border: 2px solid cyan; /* DEBUG */
     }
 
     .footer-logo {
       width: 60px;
-      margin-bottom: 10px;
+      background: gray; /* fallback */
     }
 
     /* ================= MOBILE ================= */
@@ -154,14 +137,13 @@
 
   <!-- HEADER -->
   <div class="header">
-    <img src="images/aes_shield.png" class="logo"> 
-    <!-- 🔥 make sure this file exists -->
+    <img src="images/aes_shield.png" class="logo">
   </div>
 
   <!-- NAV -->
   <div class="nav">
     <a href="index.html">Home</a>
-    <a href="#">Information</a>
+    <a href="information.html">Information</a>
     <a href="#">Contact</a>
     <a href="#">Project posts</a>
     <a href="#">Donations</a>
@@ -176,19 +158,15 @@
     <div class="right">
 
       <img src="images/aes_shield.png" class="aes-logo">
-      <!-- 🔥 same or different logo file -->
 
       <p>Welcome to the</p>
-
       <h1>Audio Engineering Society</h1>
-
       <p>at the University of Florida</p>
 
       <ul>
         <li>🎸 Workshops</li>
         <li>🎸 Tech talks</li>
         <li>🎸 Socials</li>
-        <li>🎸 Open to all majors and experience</li>
       </ul>
 
       <a href="#" class="btn">Let's Chat!</a>
@@ -201,18 +179,16 @@
   <div class="about">
     <h2>About UF AES</h2>
     <p>
-      The Audio Engineering Society is a national organization devoted to the advancement and understanding of audio technology. 
-      Our chapter of AES at the University of Florida prides itself on its contributions to the audio field and seeks to expand 
-      the presence of audio technology in the Electrical and Computer Engineering Department as well as the entire campus.
+      Test section — if you see this, your HTML is working.
     </p>
   </div>
 
   <!-- FOOTER -->
   <div class="footer">
     <img src="images/aes_shield.png" class="footer-logo">
-    <p>© 2026 Audio Engineering Society - University of Florida</p>
+    <p>Footer working</p>
   </div>
 
 </body>
 </html>
-```
+
