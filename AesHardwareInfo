@@ -103,12 +103,12 @@
         Breadboard / Protoboard!
       </div>
 
-      <img src="img/guitar_workshop.jpg">
+      <img src="ltspiceguitar.png">
     </div>
 
     <div class="row">
-      <img src="img/window_group.jpg">
-      <img src="img/classroom.jpg">
+      <img src="chair.png">
+      <img src="chair.png">
     </div>
 
     <div class="row">
@@ -120,13 +120,13 @@
         Bose Presentation
       </div>
 
-      <img src="img/meme.jpg">
-      <img src="img/lecture.jpg">
+      <img src="spongebob.png">
+      <img src="basiccircuits.png">
     </div>
 
     <div class="row">
       <img src="img/circuits.jpg" class="wide">
-      <img src="img/synth.jpg" class="wide">
+      <img src="piano.png" class="wide">
     </div>
 
     <div class="row">
