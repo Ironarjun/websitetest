@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AES Hardware</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
 
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-top: 40px;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    .big {
+      font-size: 80px;
+      font-weight: bold;
+      margin: 10px 0 20px;
+    }
+
+    .sub {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .section {
+      margin: 40px auto;
+      max-width: 1100px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 30px 0;
+    }
+
+    img {
+      max-width: 320px;
+      border-radius: 6px;
+    }
+
+    .wide img {
+      max-width: 500px;
+    }
+
+    .text-block {
+      max-width: 400px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    ul {
+      text-align: left;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .footer-logo {
+      margin: 80px 0 40px;
+    }
+
+    .footer-logo img {
+      max-width: 80px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>AES HARDWARE</h1>
+
+  <h2>ATTEND OUR HARDWARE WORKSHOPS</h2>
+  <div class="big">EVERY WEDNESDAY</div>
+  <div class="sub">5pm @ MALACHOWSKY MAKERSPACE</div>
+
+  <div class="section">
+    <div class="row">
+      <div class="text-block">
+        Pick a pedal<br>
+        Build in LTspice<br>
+        Complete build by specified date<br>
+        Place parts order<br>
+        Breadboard / Protoboard!
+      </div>
+
+      <img src="img/guitar_workshop.jpg">
+    </div>
+
+    <div class="row">
+      <img src="img/window_group.jpg">
+      <img src="img/classroom.jpg">
+    </div>
+
+    <div class="row">
+      <div>
+        <h2>FREE GUITAR PEDALS!!!</h2>
+        Guitar Anatomy workshop<br>
+        MXR+ Distortion Build<br>
+        Analog Synthesizer Series<br>
+        Bose Presentation
+      </div>
+
+      <img src="img/meme.jpg">
+      <img src="img/lecture.jpg">
+    </div>
+
+    <div class="row">
+      <img src="img/circuits.jpg" class="wide">
+      <img src="img/synth.jpg" class="wide">
+    </div>
+
+    <div class="row">
+      <ul>
+        <li>All Skill levels and majors welcome</li>
+        <li>Presentations/Workshops</li>
+        <li>Feedback on personal projects</li>
+        <li>Access to our tools</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-logo">
+    <img src="img/logo.png">
+  </div>
+
+</body>
+</html>
