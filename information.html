@@ -31,35 +31,34 @@
       height: 50px;
     }
 
-    /* NAVIGATION */
+    /* NAVIGATION - Updated to match main page */
     .nav {
-      background: #111;
-      padding: 10px 30px;
       display: flex;
       align-items: center;
       gap: 15px;
+      padding: 10px 30px;
+      background: white; /* entire nav white */
       flex-wrap: wrap;
     }
 
     .nav a {
       text-decoration: none;
-      color: white;
+      color: black; /* all links black */
       font-size: 14px;
       padding: 6px 12px;
       border-radius: 4px;
       transition: 0.2s;
+      font-weight: 500;
     }
 
-    .nav a:hover { background-color: #333; }
+    .nav a:hover {
+      background-color: #ddd; /* subtle hover effect */
+    }
 
     .nav .contact-btn {
-      background-color: #f39c12;
-      color: #000;
-      font-weight: 600;
-    }
-    .nav .contact-btn:hover {
-      background-color: #e67e22;
-      color: #fff;
+      background: none; /* remove orange */
+      color: black;
+      font-weight: 500;
     }
 
     /* BUTTON SECTION */
