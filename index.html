@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AES UF TEST</title>
+  <title>AES UF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- FONT -->
@@ -13,18 +12,19 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
+      background: black;
+      color: white;
     }
 
     /* ================= HEADER ================= */
     .header {
       background: black;
-      /*padding: 10px 30px;*/
       display: flex;
       align-items: center;
+      padding: 10px 30px;
       position: sticky;
       top: 0;
       z-index: 1000;
-      border: 2px solid red; /* DEBUG */
     }
 
     .logo {
@@ -33,33 +33,52 @@
 
     /* ================= NAV ================= */
     .nav {
-      background: #eee;
+      display: flex;
+      align-items: center;
+      gap: 15px;
       padding: 10px 30px;
-      border: 2px solid black; /* DEBUG */
+      background: #111;
+      flex-wrap: wrap;
     }
 
     .nav a {
-      margin-right: 20px;
       text-decoration: none;
-      color: black;
+      color: white;
       font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: 0.2s;
+    }
+
+    .nav a:hover {
+      background-color: #333;
+    }
+
+    .nav .contact-btn {
+      background-color: #f39c12; /* orange button */
+      color: #000;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .nav .contact-btn:hover {
+      background-color: #e67e22;
+      color: #fff;
     }
 
     /* ================= HERO ================= */
     .hero {
       display: flex;
       height: 85vh;
-      /* border: 2px solid green; /* DEBUG */ */
     }
 
     .left {
       width: 50%;
-      background: black; /* fallback color */
-      background-image: url("aeshome.png"); 
+      background: black;
+      background-image: url("aeshome.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      /* border: 2px solid yellow; /* DEBUG */ */
     }
 
     .right {
@@ -70,13 +89,12 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      /* border: 2px solid orange; /* DEBUG */ */
     }
 
     .aes-logo {
       width: 180px;
       margin-bottom: 30px;
-      background: gray; /* shows if image fails */
+      background: gray;
     }
 
     .right h1 {
@@ -101,7 +119,6 @@
       color: white;
       padding: 30px 40px;
       text-align: center;
-      /* border: 2px solid pink; /* DEBUG */ */
     }
 
     /* ================= FOOTER ================= */
@@ -110,12 +127,11 @@
       color: white;
       text-align: center;
       padding: 20px;
-      /* border: 2px black; /* DEBUG */ */
     }
 
     .footer-logo {
       width: 60px;
-      background: gray; /* fallback */
+      background: gray;
     }
 
     /* ================= MOBILE ================= */
@@ -123,13 +139,15 @@
       .hero {
         flex-direction: column;
       }
-
       .left, .right {
         width: 100%;
         height: 50vh;
       }
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
-
   </style>
 </head>
 
@@ -137,14 +155,15 @@
 
   <!-- HEADER -->
   <div class="header">
-    <img src="aes_shield.png" class="logo">
+    <img src="aes_shield.png" class="logo" alt="AES Logo">
   </div>
 
-  <!-- NAV -->
+  <!-- NAVIGATION -->
   <div class="nav">
     <a href="index.html">Home</a>
     <a href="information.html">Information</a>
-    <a href="#">Contact</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="contact.html" class="contact-btn">Contact</a>
     <a href="#">Project posts</a>
     <a href="#">Donations</a>
     <a href="#">Partnerships</a>
@@ -156,8 +175,7 @@
     <div class="left"></div>
 
     <div class="right">
-
-      <img src="aes_shield.png" class="aes-logo">
+      <img src="aes_shield.png" class="aes-logo" alt="AES Logo">
 
       <p>Welcome to the</p>
       <h1>Audio Engineering Society</h1>
@@ -169,8 +187,7 @@
         <li>🎸 Socials</li>
       </ul>
 
-      <a href="#" class="btn">Let's Chat!</a>
-
+      <a href="contact.html" class="btn">Let's Chat!</a>
     </div>
 
   </div>
@@ -179,16 +196,14 @@
   <div class="about">
     <h2>About UF AES</h2>
     <p>
-      The Audio Engineering Society is a national organization devoted to the advancement and understanding of audio technology. Our chapter of AES at the University of Florida prides itself on its contriubtions to the audio field and seeks to expand the prescence of audio technology in the Electrical and Computer Engineering Department as well as the entire campus.
+      The Audio Engineering Society is a national organization devoted to the advancement and understanding of audio technology. Our chapter at the University of Florida prides itself on its contributions to the audio field and seeks to expand the presence of audio technology in the Electrical and Computer Engineering Department as well as the entire campus.
     </p>
   </div>
 
   <!-- FOOTER -->
   <div class="footer">
-    <img src="aes_shield.png" class="footer-logo">
-    
+    <img src="aes_shield.png" class="footer-logo" alt="AES Logo">
   </div>
 
 </body>
 </html>
-
