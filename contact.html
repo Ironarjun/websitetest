@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Feedback Page</title>
+  <title>Feedback Page - AES UF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -12,6 +12,46 @@
       color: #fff;
     }
 
+    /* ================= HEADER ================= */
+    .header {
+      background: black;
+      display: flex;
+      align-items: center;
+      padding: 10px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    /* ================= NAVIGATION ================= */
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 30px;
+      background: white; /* white nav background */
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: black; /* all links black */
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: 0.2s;
+      font-weight: 500;
+    }
+
+    .nav a:hover {
+      background-color: #ddd;
+    }
+
+    /* ================= CONTAINER ================= */
     .container {
       display: flex;
       flex-wrap: wrap;
@@ -31,6 +71,7 @@
 
     .left p {
       font-size: 1.2em;
+      margin: 10px 0;
     }
 
     .left a img {
@@ -92,6 +133,7 @@
       width: 80px;
     }
 
+    /* ================= MOBILE ================= */
     @media(max-width: 800px) {
       .container {
         flex-direction: column;
@@ -110,6 +152,23 @@
 </head>
 <body>
 
+  <!-- HEADER -->
+  <div class="header">
+    <img src="aes_shield.png" class="logo" alt="AES Logo">
+  </div>
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="information.html">Information</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="contact.html">Contact</a>
+    <a href="#">Project posts</a>
+    <a href="#">Donations</a>
+    <a href="#">Partnerships</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
   <div class="container">
     <div class="left">
       <h1>Give Us Your <br>Feedback</h1>
@@ -123,7 +182,7 @@
       <!-- Discord icon below Instagram -->
       <br><br>
       <a href="https://discord.gg/ZxNEkEWudQ" target="_blank">
-        <img src="discordlogo.png">
+        <img src="discordlogo.png" alt="Discord">
       </a>
 
       <!-- Instruction text with red arrow -->
@@ -131,7 +190,7 @@
     </div>
 
     <div class="right">
-      <!-- Replace form action with your Formspree URL or backend URL -->
+      <!-- Feedback Form -->
       <form action="https://formspree.io/f/myknabko" method="POST">
         <input type="text" name="name" placeholder="Enter your name" required>
         <input type="email" name="email" placeholder="Enter your email" required>
@@ -144,6 +203,7 @@
     </div>
   </div>
 
+  <!-- Footer -->
   <div class="footer">
     A UF AES initiative
     <br>
@@ -152,4 +212,3 @@
 
 </body>
 </html>
-
