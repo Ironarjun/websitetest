@@ -73,31 +73,52 @@
       font-size: 18px;
     }
 
-    /* Logo at top left */
+    /* HEADER */
     .header {
-      position: relative;
-      padding: 20px;
-    }
-
-    .header img.logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 100px; /* Adjust logo size as needed */
-    }
-
-   .nav {
-      background: #eee;
+      background: black;
       padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    /* NAVIGATION BAR SAME AS MAIN PAGE */
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 30px;
+      background: white; /* white nav background */
+      flex-wrap: wrap;
     }
 
     .nav a {
-      margin-right: 20px;
       text-decoration: none;
-      color: black;
+      color: black; /* links black */
       font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: 0.2s;
+      font-weight: 500;
     }
 
+    .nav a:hover {
+      background-color: #ddd; /* subtle hover effect */
+    }
+
+    .nav .contact-btn {
+      background: none; /* remove orange */
+      color: black;
+      font-weight: 500;
+    }
+
+    /* FOOTER */
     .footer-logo {
       margin: 80px 0 40px;
     }
@@ -106,13 +127,23 @@
       max-width: 80px;
       opacity: 0.9;
     }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
 <body>
 
   <!-- HEADER -->
   <div class="header">
-    <!-- Logo image added here -->
     <img src="aes_shield.png" alt="AES Logo" class="logo">
   </div>
 
@@ -120,14 +151,15 @@
   <div class="nav">
     <a href="index.html">Home</a>
     <a href="information.html">Information</a>
-    <a href="#">Contact</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="contact.html" class="contact-btn">Contact</a>
     <a href="#">Project posts</a>
     <a href="#">Donations</a>
     <a href="#">Partnerships</a>
   </div>
 
+  <!-- PAGE CONTENT -->
   <h1>AES HARDWARE</h1>
-
   <h2>ATTEND OUR HARDWARE WORKSHOPS</h2>
   <div class="big">EVERY WEDNESDAY</div>
   <div class="sub">5pm @ MALACHOWSKY MAKERSPACE</div>
@@ -141,7 +173,6 @@
         Place parts order<br>
         Breadboard / Protoboard!
       </div>
-
       <img src="ltspiceguitar.png" alt="LTspice Guitar Pedal">
     </div>
 
@@ -158,7 +189,6 @@
         Analog Synthesizer Series<br>
         Bose Presentation
       </div>
-
       <img src="spongebob.png" alt="SpongeBob Graphic">
       <img src="basiccircuits.png" alt="Basic Circuits">
     </div>
