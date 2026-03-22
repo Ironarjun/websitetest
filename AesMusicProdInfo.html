@@ -16,93 +16,82 @@
       text-align: center;
     }
 
-    h1 {
-      font-size: 50px;
-      margin-top: 40px;
-    }
-
-    h2 {
-      font-size: 26px;
-      margin: 10px 0;
-    }
-
-    .big {
-      font-size: 90px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-
-    .sub {
-      font-size: 18px;
-      margin-bottom: 40px;
-    }
-
-    .section {
-      max-width: 1200px;
-      margin: 40px auto;
-    }
-
-    .row {
+    /* ================= HEADER ================= */
+    .header {
+      background: black;
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 40px;
+      padding: 10px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    /* ================= NAV ================= */
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 30px;
+      background: white;
       flex-wrap: wrap;
-      margin: 40px 0;
     }
 
-    .left, .right {
-      flex: 1;
-      min-width: 300px;
+    .nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: 0.2s;
+      font-weight: 500;
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 6px;
+    .nav a:hover {
+      background-color: #ddd;
     }
 
-    .large-text {
-      font-size: 48px;
-      font-weight: bold;
-      text-align: left;
-      line-height: 1.2;
-    }
-
-    .small-text {
-      font-size: 18px;
-      margin-top: 10px;
-      text-align: left;
-    }
-
-    ul {
-      text-align: left;
-      display: inline-block;
-      font-size: 18px;
-      margin-top: 20px;
-    }
-
-    .footer {
-      margin: 80px 0 40px;
-    }
-
-    .footer img {
-      width: 90px;
-      opacity: 0.9;
-    }
-
-    .daw-header {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
+    /* ================= REST OF SOFTWARE PAGE STYLES ================= */
+    h1 { font-size: 50px; margin-top: 40px; }
+    h2 { font-size: 26px; margin: 10px 0; }
+    .big { font-size: 90px; font-weight: bold; margin: 10px 0; }
+    .sub { font-size: 18px; margin-bottom: 40px; }
+    .section { max-width: 1200px; margin: 40px auto; }
+    .row { display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin: 40px 0; }
+    .left, .right { flex: 1; min-width: 300px; }
+    img { max-width: 100%; border-radius: 6px; }
+    .large-text { font-size: 48px; font-weight: bold; text-align: left; line-height: 1.2; }
+    .small-text { font-size: 18px; margin-top: 10px; text-align: left; }
+    ul { text-align: left; display: inline-block; font-size: 18px; margin-top: 20px; }
+    .footer { margin: 80px 0 40px; }
+    .footer img { width: 90px; opacity: 0.9; }
+    .daw-header { font-size: 20px; margin-bottom: 10px; }
   </style>
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <div class="header">
     <img src="aes_shield.png" alt="AES Logo" class="logo">
   </div>
 
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="information.html">Information</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="contact.html">Contact</a>
+    <a href="#">Project posts</a>
+    <a href="#">Donations</a>
+    <a href="#">Partnerships</a>
+  </div>
+
+  <!-- SOFTWARE PAGE CONTENT -->
   <h2>ATTEND OUR MUSIC PRODUCTION WORKSHOPS</h2>
   <div class="big">EVERY MONDAY</div>
   <div class="sub">6pm @ LARSEN 234</div>
